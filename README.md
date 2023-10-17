@@ -34,3 +34,9 @@ GOARCH=amd64 GOOS=windows go build -o hello.exe main.go
 # builtin functions
 
 - print , println
+
+
+
+
+Tasks: Go to the tasks/ directory to find tasks
+https://github.com/JitenPalaparthi/golang-training-questglobal
