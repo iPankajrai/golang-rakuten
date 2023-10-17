@@ -29,11 +29,11 @@ GOARCH=amd64 GOOS=windows go build -o hello.exe main.go
 ```
 # Keywords
 
-- package, func , import , if, else, switch, return, default, break, continue, var, const,case, 
+- package, func , import , if, else, switch, return, default, break, continue, var, const,case, map, range
 
 # builtin functions
 
-- print , println, len
+- print , println, len,cap, append, copy, make, delete
 
 
 
