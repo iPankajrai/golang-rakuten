@@ -42,3 +42,6 @@ GOARCH=amd64 GOOS=windows go build -o hello.exe main.go
 
 Tasks: Go to the tasks/ directory to find tasks
 https://github.com/JitenPalaparthi/golang-training-questglobal
+
+Create and deploy a package
+https://github.com/JitenPalaparthi/rakutenshapes
