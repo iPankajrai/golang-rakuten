@@ -77,6 +77,7 @@ func main() {
 	shapes[2] = &s1
 	shapes[3] = &s2
 	shapes[4] = &c1
+	//shapes[5] = &Circle{R: 25.} // since circle is not implementing the interface , it cannot be given to the slice
 
 	for _, v := range shapes {
 		if v == nil {
@@ -87,6 +88,10 @@ func main() {
 
 	}
 
+}
+
+type Circle struct {
+	R float32
 }
 
 func AreaPetimer(iap IAreaPerimeter) {
