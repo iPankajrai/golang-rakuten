@@ -1,0 +1,9 @@
+Value of a,b, a/b: 10 9 1
+Value of a,b, a/b: 9 8 1
+Value of a,b, a/b: 8 7 1
+Value of a,b, a/b: 7 6 1
+Value of a,b, a/b: 6 5 1
+Value of a,b, a/b: 5 4 1
+Value of a,b, a/b: 4 3 1
+Value of a,b, a/b: 3 2 1
+Value of a,b, a/b: 2 1 2

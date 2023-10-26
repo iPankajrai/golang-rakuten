@@ -29,13 +29,13 @@ GOARCH=amd64 GOOS=windows go build -o hello.exe main.go
 ```
 # Keywords
 
-- package, func , import , if, else, switch, return, default, break, continue, var, const,case, map, range, type, struct, fallthrough
+- package, func , import , if, else, switch, return, default, break, continue, var, const,case, map, range, type, struct, fallthrough, defer 
 
 - 
 
 # builtin functions
 
-- print , println, len,cap, append, copy, make, delete, new 
+- print , println, len,cap, append, copy, make, delete, new , recover
 
 
 
