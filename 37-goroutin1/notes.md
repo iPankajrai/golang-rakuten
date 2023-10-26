@@ -1,0 +1,6 @@
+-  CSP by Tony Hoare
+-  Communicating Sequential Process
+-  Late 70s or early 80
+-  Erlang By Ericsson
+-  WhatsApp was created using Erlang
+-  Golang has influenced by CSP and implemented Go Routines/Channels using CSP
