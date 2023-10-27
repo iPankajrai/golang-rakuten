@@ -35,7 +35,7 @@ GOARCH=amd64 GOOS=windows go build -o hello.exe main.go
 
 # builtin functions
 
-- print , println, len,cap, append, copy, make, delete, new , recover ,panic
+- print , println, len,cap, append, copy, make, delete, new , recover ,panic.close
 
 
 
