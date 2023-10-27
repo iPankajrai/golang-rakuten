@@ -21,3 +21,15 @@
 
 - <- is towards the channel then it is a sender. ch <- 100
 - <- is from the channel then it is a receiver. v:= <- ch
+
+- send only channel   ch chan<- int
+- receive only channel ch <-chan int
+- bidirectional channel ch chan int
+
+- range loop on a channel receive values until the channel is closed
+- only a sender can close a channel, not the receiver.But receiver can check whether a channel is closed or not.
+- to close a channel use built in function close(ch)
+- once a channel is closed, the sender can never sends the values again.
+- cannot check whether a channel is closed or not from the sender side.
+- can check at the receiver side.
+- v, ok := <-ch . can check this way whether a channel is closed or not. If ok is false that means the channel is closed
