@@ -29,7 +29,7 @@ GOARCH=amd64 GOOS=windows go build -o hello.exe main.go
 ```
 # Keywords
 
-- package, func,for,import,if,else,switch, return, default, break, continue, var, const,case, map, range, type, struct, fallthrough, defer ,go,goto,interface,chan
+- package, func,for,import,if,else,switch, return, default, break, continue, var, const,case, map, range, type, struct, fallthrough, defer ,go,goto,interface,chan,select
 
 - 
 

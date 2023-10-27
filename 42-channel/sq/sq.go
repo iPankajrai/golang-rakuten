@@ -38,3 +38,11 @@ func ReceiveSqLoop(ch <-chan int) {
 		fmt.Println(v)
 	}
 }
+
+func ReceiveSqRDone(ch <-chan int, done chan<- bool) {
+	for v := range ch { // range loop on a channel receive values until the channel is closed
+		fmt.Println(v)
+	}
+
+	done <- true
+}

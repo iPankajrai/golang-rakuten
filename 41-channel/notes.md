@@ -33,3 +33,4 @@
 - cannot check whether a channel is closed or not from the sender side.
 - can check at the receiver side.
 - v, ok := <-ch . can check this way whether a channel is closed or not. If ok is false that means the channel is closed
+- when a channel is closed, it sends a default value(type inference value)
