@@ -4,8 +4,8 @@ import "fmt"
 
 func main() {
 
-	var slice1 []int // this is only the declaration of slice
-	slice1 = make([]int, 3)
+	var slice1 []int        // this is only the declaration of slice
+	slice1 = make([]int, 3) // len(slice1)=3
 	fmt.Println(slice1)
 	fmt.Println("Length:", len(slice1), "Capacity:", cap(slice1), "Address:", &slice1[0])
 	slice1[0] = 100

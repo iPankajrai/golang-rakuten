@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
@@ -36,3 +39,45 @@ func main() {
 	}
 
 }
+
+func WordCount(s string) map[string]int {
+	fields := strings.Fields(s)
+	//fmt.Printf("Type of fields is %T\n", fields)
+
+	wordMap := make(map[string]int)
+	for _, wordStr := range fields {
+		//fmt.Printf("value at index %d is %v\n", wordIndex, wordStr)
+		_, ok := wordMap[wordStr]
+		if ok {
+			wordMap[wordStr] += 1
+		} else {
+			wordMap[wordStr] = 1
+		}
+	}
+	return wordMap
+}
+
+//Mutating maps
+/*
+Mutating Maps
+Insert or update an element in map m:
+
+m[key] = elem
+Retrieve an element:
+
+elem = m[key]
+Delete an element:
+
+delete(m, key)
+Test that a key is present with a two-value assignment:
+
+elem, ok = m[key]
+If key is in m, ok is true. If not, ok is false.
+
+If key is not in the map, then elem is the zero value for the map's element type.
+
+Note: If elem or ok have not yet been declared you could use a short declaration form:
+
+elem, ok := m[key]
+
+*/

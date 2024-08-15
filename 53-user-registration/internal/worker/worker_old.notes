@@ -1,0 +1,42 @@
+// worker and services, both are importing repositories package
+// But Go doesnt allow cyclic import hence it is throwing "cyclic import error"
+
+/*
+package worker
+
+import (
+	repositories "user-registration/internal/app/repositories"
+	models "user-registration/pkg/models"
+)
+
+type ReadRequest struct {
+	ID       uint
+	Response chan ReadResponse
+}
+
+type ReadResponse struct {
+	User  *models.User
+	Error error
+}
+
+var readRequests = make(chan ReadRequest, 10000)
+
+func StartReadWorkerPool(numWorkers int) {
+	for i := 0; i < numWorkers; i++ {
+		go readWorker()
+	}
+}
+
+func readWorker() {
+	for req := range readRequests {
+		user, err := repositories.GetUser(req.ID)
+		req.Response <- ReadResponse{User: user, Error: err}
+	}
+}
+
+func QueueReadRequest(id uint) ReadResponse {
+	response := make(chan ReadResponse)
+	readRequests <- ReadRequest{ID: id, Response: response}
+	return <-response
+}
+*/

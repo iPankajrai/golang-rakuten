@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+// main is the entry point of the program.
+// It demonstrates the usage of various struct types and their initialization.
 func main() {
 
 	var p1 Person

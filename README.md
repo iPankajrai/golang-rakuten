@@ -37,11 +37,16 @@ GOARCH=amd64 GOOS=windows go build -o hello.exe main.go
 
 - print , println, len,cap, append, copy, make, delete, new , recover ,panic.close
 
-
-
-
 Tasks: Go to the tasks/ directory to find tasks
 https://github.com/JitenPalaparthi/golang-training-questglobal
 
 Create and deploy a package
 https://github.com/JitenPalaparthi/rakutenshapes
+
+
+# ===================== June 2024 onwards
+- Go provides sort of OOPs (Not completely oops)
+    - If we declare a variable or function name starting with a capital letter then it is available outside of package also 
+
+- Receivers: structs with functions
+    - we can tie a function with a struct by providing the struct pointer as a reciever to that function.
